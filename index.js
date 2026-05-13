@@ -5,6 +5,7 @@ let hasblackjack = false
 let isalive =true
 
 let message=""
+function startgame(){
 if (sum>20){
 message="do you want to draw a new card ?"
 }else if(sum===21){
@@ -15,3 +16,4 @@ hasblackjack=true;
     isalive=false;
 }
 console.log(message)
+}
