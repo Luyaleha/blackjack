@@ -4,8 +4,12 @@ let sum = firstcard + secondcard + 4
 let hasblackjack = false
 let isalive =true
 
-let message=""
-function startgame(){
+let messageEl= document.getElementById("message-el")
+let sumEl= document.querySelector("#sum-el")
+let cardEl= document.querySelector("#card-el")
+function startgame(){ 
+ cardEl.textContent="cards:" + firstcard + "" + secondcard   
+ sumEl.textContent="sum:"+ sum   
 if (sum>20){
 message="do you want to draw a new card ?"
 }else if(sum===21){
@@ -15,5 +19,5 @@ hasblackjack=true;
     message="you're out of the game"
     isalive=false;
 }
-console.log(message)
+messageEl.textContent= message
 }
