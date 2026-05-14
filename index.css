@@ -20,6 +20,7 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 2px;
+    margin-bottom: 4px;
 }
 #message-el{
 font-style: italic;
